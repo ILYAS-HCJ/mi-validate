@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 23px;
+    font-family: "Poppins", sans-serif;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 23px;
+}
+
+nav .logo span{
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(180, 183, 192);
+}
+
+main{
+    font-family: "Roboto", serif;
+    height: calc(100vh - nav , footer); /* not shure that it works made by my self */
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+    /* padding: 23px; */
+}
+
+.container h1{
+    margin: 23px 0;
+}
+
+input{
+    min-width: 23vw;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.result h2{
+    margin: 10px 0;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer{
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .container h1{
+        margin: 23px 0;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .logo{
+        padding: 6px 0;
+    }
+}
